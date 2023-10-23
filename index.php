@@ -48,19 +48,16 @@ function generateAnons($text, $link_path){
 
 
  CREATE TABLE Authors_Articles (Article_ID INT,
-                                Author_ID INT,
-                                FOREIGN KEY (Article_ID) REFERENCES Articles(ID),
-                                FOREIGN KEY (Author_ID) REFERENCES Authors(ID));
+                                Author_ID INT);
 
 
  CREATE TABLE Likes (Article_ID INT,
-                     likes INT,
+                     likes INT
                      FOREIGN KEY (Article_ID) REFERENCES Articles(ID));
 
 
  CREATE TABLE Comments (Article_ID INT,
-                        comment VARCHAR NOT NULL,
-                        FOREIGN KEY (Article_ID) REFERENCES Articles(ID));
+                        comment VARCHAR NOT NULL);
 */
 
 // Наполнение
